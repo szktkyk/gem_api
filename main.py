@@ -8,7 +8,7 @@ import os
 app = FastAPI()
 
 def find_and_read_csv(directory):
-    # 正規表現パターンで6桁の数字を持つファイル名を探す
+    # 正規表現パターンで8桁の数字を持つファイル名を探す
     pattern = re.compile(r'\d{8}_ge_metadata\.csv')
     
     for root, _, files in os.walk(directory):
